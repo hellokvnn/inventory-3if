@@ -21,6 +21,10 @@ Route::get('/person/show/{param}', 'PersonController@show');
 
 Route::get('/person/sendData', 'PersonController@sendData');
 
+Route::get('/person/add', 'PersonController@add');
+
+Route::post('/person/addProcess', 'PersonController@addProcess');
+
 Route::get ('/homepage', function() {
     return view('home', ["name" => "Mochamad Kevin Nur Setia Adji"]);             
 });
